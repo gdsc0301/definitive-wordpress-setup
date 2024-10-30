@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Download SSH key
         env:
           SSH_KEY: ${{ secrets.SSH_KEY }}
@@ -18,7 +18,7 @@ jobs:
           echo "$SSH_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{secrets.SSH_HOST}} >> ~/.ssh/known_hosts
-      # Use the ssh key to connect to the server and run the deploy script
+          
       - name: Deploy the website
         env:
           SERVER_IP: ${{ secrets.SSH_HOST }}
