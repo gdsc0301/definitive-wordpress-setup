@@ -20,4 +20,4 @@ jobs:
       # Use the ssh key to connect to the server and run the deploy script
       - name: Deploy
         run: |
-          SERVER_IP=${{ secrets.SSH_HOST }} sh deploy.sh
+          SERVER_IP=${{ secrets.SSH_HOST }} ./deploy.sh
