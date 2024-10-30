@@ -606,8 +606,24 @@ video {
   margin-right: auto;
 }
 
+.grid {
+  display: grid;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
 .w-full {
   width: 100%;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .text-center {
