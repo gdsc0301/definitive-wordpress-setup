@@ -1,0 +1,50 @@
+services:
+  wordpress:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - wordpress:/var/www/html
+      - ./wp-content:/var/www/html/wp-content
+    networks:
+      - proxy_network
+    environment:
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_TABLE_PREFIX: emb_
+    depends_on:
+      - mysql
+  nginx:
+    image: nginx:1.27.2
+    depends_on:
+      - wordpress
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - wordpress:/var/www/html
+      - ./wp-content:/var/www/html/wp-content
+      - ./nginx-dev:/etc/nginx/conf.d
+    networks:
+      - proxy_network
+  mysql:
+    image: mysql:9.1
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    volumes:
+      - mysql:/var/lib/mysql
+    networks:
+      - proxy_network
+networks:
+  proxy_network:
+    driver: bridge
+volumes:
+  mysql:
+  wordpress:
