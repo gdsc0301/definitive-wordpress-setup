@@ -21,6 +21,6 @@ jobs:
           
       - name: Deploy the website
         env:
-          SERVER_IP: ${{ secrets.SSH_HOST }}
+          SERVER_IP: blog.dropcompress.com
         run: |
           ./deploy.sh
