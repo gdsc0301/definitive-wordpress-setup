@@ -5,8 +5,9 @@ services:
       dockerfile: Dockerfile
     restart: always
     volumes:
-      - wordpress:/var/www/html
-      - ./wp-content:/var/www/html/wp-content
+      - ./wordpress:/var/www/html
+      - ./wp-content/themes/:/var/www/html/wp-content/themes/
+      - ./wp-content/plugins/:/var/www/html/wp-content/plugins/
     networks:
       - proxy_network
     environment:
@@ -25,8 +26,9 @@ services:
     ports:
       - 80:80
     volumes:
-      - wordpress:/var/www/html
-      - ./wp-content:/var/www/html/wp-content
+      - ./wordpress:/var/www/html
+      - ./wp-content/themes/:/var/www/html/wp-content/themes/
+      - ./wp-content/plugins/:/var/www/html/wp-content/plugins/
       - ./nginx-dev:/etc/nginx/conf.d
     networks:
       - proxy_network

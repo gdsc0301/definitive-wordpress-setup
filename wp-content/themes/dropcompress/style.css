@@ -606,6 +606,10 @@ video {
   margin-right: auto;
 }
 
+.block {
+  display: block;
+}
+
 .grid {
   display: grid;
 }
