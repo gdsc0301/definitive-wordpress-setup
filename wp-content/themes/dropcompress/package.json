@@ -1,0 +1,14 @@
+{
+  "name": "dropcompress-blog-theme",
+  "version": "1.0.0",
+  "main": "index.php",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/style.css -o ./style.css --watch"
+  },
+  "author": "Guilherme Carvalho",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
