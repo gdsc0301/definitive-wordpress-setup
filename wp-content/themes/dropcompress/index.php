@@ -14,8 +14,8 @@
 get_header(); ?>
 
 <main class="w-full">
-  <div class="container mx-auto">
-    <h1>Drop Compress - Blog</h1>
+  <div class="container mx-auto text-center">
+    <h1 class="text-xl font-bold">Drop Compress - Blog</h1>
     <p>Under construction</p>
   </div>
 </main>
