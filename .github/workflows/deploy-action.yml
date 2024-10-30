@@ -19,7 +19,7 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{secrets.SSH_HOST}} >> ~/.ssh/known_hosts
       # Use the ssh key to connect to the server and run the deploy script
-      - name: Deploy
+      - name: Deploy the website
         env:
           SERVER_IP: ${{ secrets.SSH_HOST }}
         run: |
