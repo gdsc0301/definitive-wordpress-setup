@@ -1,9 +1,9 @@
 # Zip the files and ignore node_modules
 tar \
-  --exclude='./wp-content/themes/twentytwentytwo' \
-  --exclude='./wp-content/themes/twentytwentythree' \
-  --exclude='./wp-content/themes/twentytwentyfour' \
-  --exclude='./wp-content/themes/my-custom-theme/node_modules' \
+  --exclude='wp-content/themes/twentytwentytwo' \
+  --exclude='wp-content/themes/twentytwentythree' \
+  --exclude='wp-content/themes/twentytwentyfour' \
+  --exclude='wp-content/themes/my-custom-theme/node_modules' \
   -cvzf \
   deploy.tar.gz \
   compose.yml \
