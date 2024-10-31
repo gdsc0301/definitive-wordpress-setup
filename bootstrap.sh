@@ -1,7 +1,7 @@
 if [ -d "$FOLDER" ]; then
   cd $FOLDER
   # Stop all the containers on compose.yml
-  docker stop -fv $(docker ps -a -q)
+  docker stop $(docker ps -a -q)
   # Remove all the containers on compose.yml
   docker rm -fv $(docker ps -a -q)
   cd ..

@@ -34,6 +34,3 @@ ssh root@$SERVER_IP "chown -R www-data:www-data $FOLDER"
 
 # Run the compose file
 ssh root@$SERVER_IP "cd $FOLDER && docker compose up -d --build"
-
-# Remove the tar.gz file
-# rm deploy.tar.gz
