@@ -27,6 +27,12 @@ jobs:
         run: |
           sed -i "s|%SERVER_NAME%|${SERVER_NAME}|g" nginx-prod/nginx.conf
 
+      - name: Build the tailwind.css file
+        run: |
+          cd wp-content/themes/my-custom-theme
+          npm install
+          npm run build
+
       - name: Deploy the website
         env:
           SERVER_IP: ${{ secrets.SERVER_IP }}
