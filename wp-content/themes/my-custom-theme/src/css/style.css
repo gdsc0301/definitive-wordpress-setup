@@ -1,21 +1,17 @@
 /*
-    Theme Name: DropCompress
-    Theme URI: https://blog.dropcompress.com
-    Author: DropCompress
-    Author URI: https://dropcompress.com
-    Description: The theme for the blog of DropCompress
-    Version: 1.0
-    License: GNU General Public License v2 or later
-    License URI: http://www.gnu.org/licenses/gpl-2.0.html
-    Text Domain: dropcompress
-    Tags: blog, one-column, two-columns, right-sidebar, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+  Theme Name: My Custom Theme
+  Author: Guilherme Carvalho
+  Author URI: https://github.com/gdsc0301
+  Description: The theme for the Definitive WordPress Setup
+  Version: 1.0
+  License: GNU General Public License v2 or later
+  License URI: http://www.gnu.org/licenses/gpl-2.0.html
+  Tags: blog, one-column, two-columns, right-sidebar, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 
 /*
  * Font smoothing.

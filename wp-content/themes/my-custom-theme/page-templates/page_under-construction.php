@@ -4,7 +4,7 @@ get_header(); ?>
 
 <main class="w-full h-screen grid items-center justify-center">
   <div class="container mx-auto text-center">
-    <h1 class="text-xl font-bold">Drop Compress - Blog</h1>
+    <h1 class="text-xl font-bold">My custom theme</h1>
     <p>Under construction</p>
   </div>
 </main>

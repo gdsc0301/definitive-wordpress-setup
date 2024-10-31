@@ -1,25 +1,9 @@
 <?php
 /**
- * DropCompress functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package DropCompress
+ * MyCustomTheme functions and definitions
  */
 if ( ! function_exists( 'support' ) ) :
-
-	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
-	 *
-	 * @since Twenty Twenty-Two 1.0
-	 *
-	 * @return void
-	 */
 	function support() {
-
-		// Add support for block styles.
-		add_theme_support( 'wp-block-styles' );
-
 		// Enqueue editor styles.
 		add_editor_style( 'style.css' );
 	}
@@ -35,14 +19,14 @@ if ( ! function_exists( 'styles' ) ) :
 
 		$version_string = is_string( $theme_version ) ? $theme_version : false;
 		wp_register_style(
-			'dropcompress-style',
+			'my-custom-theme-style',
 			get_template_directory_uri() . '/style.css',
 			array(),
 			$version_string
 		);
 
 		// Enqueue theme stylesheet.
-		wp_enqueue_style( 'dropcompress-style' );
+		wp_enqueue_style( 'my-custom-theme-style' );
 	}
 
 endif;

@@ -1,13 +1,12 @@
 {
-  "name": "dropcompress-blog-theme",
+  "name": "my-custom-theme",
   "version": "1.0.0",
   "main": "index.php",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/css/style.css -o ./style.css --watch"
   },
   "author": "Guilherme Carvalho",
-  "license": "ISC",
-  "description": "",
+  "description": "This is a simple custom WordPress theme",
   "devDependencies": {
     "tailwindcss": "^3.4.14"
   }
