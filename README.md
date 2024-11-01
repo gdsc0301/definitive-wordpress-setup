@@ -3,8 +3,8 @@
 This is a WordPress installation that is designed to be as close to the
 definitive setup as possible.
 
-The goal is to have a WordPress installation that is easy to implement in
-a new server.
+The goal is to have a WordPress installation that is plug-and-play.
+It's not a WordPress theme, it's a WordPress installation.
 
 ## Server Requirements
 - Any recent Ubuntu version
@@ -13,6 +13,12 @@ a new server.
 - An IPv4 address
 - Internet access
 - SSH access
+
+## The Server
+There are many ways to get a server
+
+I usually use [Hetzner Cloud](https://www.hetzner.com/). It's cheap, fast, reliable, and easy to use.
+You can get a server for €4/month.
 
 ## Step 1
 ### Download this repository to your local machine.
